@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".TelaEntrar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="97dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Logo FecaPass"
+            android:src="@drawable/logo" />
+
+        <!-- Título Entrar -->
+        <TextView
+            android:id="@+id/textEntrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Entrar"
+            android:textColor="@color/appColor1"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Campos de Entrada -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:background="@android:drawable/editbox_background"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/etSenha"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:background="@android:drawable/editbox_background"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- CheckBox lembrar de mim -->
+        <CheckBox
+            android:id="@+id/cbLembrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lembrar de mim"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Esqueci minha senha -->
+        <TextView
+            android:id="@+id/textEsqueciSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esqueci minha senha"
+            android:textColor="@color/appColor2"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:onClick="mudarParaEsqueciSenha"/>
+
+        <!-- Botão Entrar -->
+        <Button
+            android:id="@+id/btnEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Entrar"
+            android:backgroundTint="@color/appColor2"
+            android:textColor="@color/appColor6"
+            android:textStyle="bold"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Link para Cadastro -->
+        <TextView
+            android:id="@+id/textCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não tem conta? Cadastre-se"
+            android:textColor="@color/appColor2"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="60dp"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:onClick="mudarTelaCadastro"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
